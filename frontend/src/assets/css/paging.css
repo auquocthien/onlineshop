@@ -1,0 +1,21 @@
+li {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+}
+
+.selected:hover {
+    color: blue;
+}
+
+li:hover:not(.selected) {
+    background-color: #ddd;
+    border-radius: 10px;
+}
