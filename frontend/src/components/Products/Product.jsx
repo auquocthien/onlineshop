@@ -39,7 +39,7 @@ const Product = ({ product }) => {
               <p className='mt-1 text-hot-pink'>${product.price}</p>
             </div>
             <div>
-              <p className='text-gray-900 font-medium'>stock left: {product.quantity} </p>
+              <p className='pt-1 text-gray-900 text-xs tracking-widest title-font mb-1'>Stock left: {product.quantity} </p>
             </div>
           </div>
         </div>

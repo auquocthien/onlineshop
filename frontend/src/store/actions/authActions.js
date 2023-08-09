@@ -9,6 +9,8 @@ import {
   AUTH_ERROR,
 } from 'constant/types';
 
+
+
 export const logIn = (emailAndpassword) => ({
   type: LOGIN,
   payload: emailAndpassword,
@@ -39,7 +41,7 @@ export const logOut = () => ({
 });
 
 export const logOutSuccess = () => {
-  window.location.reload();
+  window.location.reload()
   return {
     type: LOGOUT_SUCCESS,
   };

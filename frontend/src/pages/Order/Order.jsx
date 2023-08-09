@@ -32,6 +32,7 @@ const Order = () => {
         resolver: yupResolver(orderSchema),
         mode: 'onBlur'
     })
+
     const [paymentField, setPaymentField] = useState("cod")
     const submitOrder = async (data) => {
         const payload = {

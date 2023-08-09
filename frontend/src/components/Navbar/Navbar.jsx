@@ -66,7 +66,10 @@ const Navbar = () => {
             </li>
             <li className='tracking-wider font-bold cursor-pointer'>
               <button
-                onClick={() => dispatch(logOut())}
+                onClick={() => {
+                  history('/signin')
+                  dispatch(logOut())
+                }}
                 className='flex justify-center items-center hover:text-gray-500 font-bold'
               >
                 {isLoading ? 'LOGGING OUT' : 'LOGOUT'}
